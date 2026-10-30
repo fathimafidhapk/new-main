@@ -1,0 +1,101 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auditorium Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>VenueBook</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#venues">Auditoriums</a>
+            <a href="#booking">Book Now</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Find the Perfect Auditorium</h2>
+        <p>Book a space for your next event.</p>
+        <a href="#venues" class="button">Explore Auditoriums</a>
+    </section>
+
+    <section id="venues">
+        <h2>Available Auditoriums</h2>
+
+        <div class="venue-container">
+
+            <div class="venue">
+                <h3>Grand Auditorium</h3>
+                <p>Capacity: 1000 people</p>
+                <p>Price: ₹15,000/day</p>
+                <button onclick="selectVenue('Grand Auditorium')">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="venue">
+                <h3>College Auditorium</h3>
+                <p>Capacity: 500 people</p>
+                <p>Price: ₹8,000/day</p>
+                <button onclick="selectVenue('College Auditorium')">
+                    Book Now
+                </button>
+            </div>
+
+            <div class="venue">
+                <h3>Mini Auditorium</h3>
+                <p>Capacity: 200 people</p>
+                <p>Price: ₹4,000/day</p>
+                <button onclick="selectVenue('Mini Auditorium')">
+                    Book Now
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book an Auditorium</h2>
+
+        <form id="bookingForm">
+
+            <input type="text" id="name"
+                   placeholder="Your Name" required>
+
+            <input type="email" id="email"
+                   placeholder="Your Email" required>
+
+            <select id="venue" required>
+                <option value="">Select Auditorium</option>
+                <option value="Grand Auditorium">Grand Auditorium</option>
+                <option value="College Auditorium">College Auditorium</option>
+                <option value="Mini Auditorium">Mini Auditorium</option>
+            </select>
+
+            <input type="date" id="date" required>
+
+            <input type="number" id="guests"
+                   placeholder="Number of Guests"
+                   min="1" required>
+
+            <button type="submit">Submit Booking</button>
+
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <footer>
+        <p>© 2026 VenueBook | Auditorium Booking Website</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
