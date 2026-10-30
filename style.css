@@ -121,4 +121,31 @@ footer {
         width: 100%;
     }
 }
-```
+```/* Dark Mode */
+body.dark {
+    background: #121212;
+    color: white;
+}
+
+body.dark header,
+body.dark footer {
+    background: #111;
+    color: white;
+}
+
+body.dark .venue {
+    background: #252525;
+    color: white;
+}
+
+body.dark input,
+body.dark select,
+body.dark textarea {
+    background: #333;
+    color: white;
+    border-color: #555;
+}
+
+body.dark a {
+    color: #90caf9;
+}
